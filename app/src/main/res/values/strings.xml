@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">RecyclerView</string>
+
+    <string-array name="couleur">
+        <item>rouge</item>
+        <item>vert</item>
+        <item>jaune</ item>
+        <item>violet</item>
+        <item>gris</item>
+        <item>orange</item>
+        <item>rose</item>
+        <item>cyan</item>
+        <item>marron</item>
+    </string-array>
+
+    <string-array name="description">
+        <item>Lorem amet</ item>
+        <item>Lorem amet</item>
+        <item>Lorem amet</item>
+        <item>Lorem amet</ item>
+        <item>Lorem amet</item>
+        <item>Lorem amet</ item>
+        <item>Lorem amet</ item>
+        <item>Lorem amet</item>
+        <item>Lorem amet</item>
+    </string-array>
+
 </resources>
