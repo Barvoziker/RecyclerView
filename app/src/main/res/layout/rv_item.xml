@@ -8,15 +8,17 @@
     <androidx.cardview.widget.CardView
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="1dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/titre_couleur"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -24,12 +26,12 @@
                 android:text="Titre"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintStart_toEndOf="@+id/image_couleur"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/description_couleur"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sous titre"
@@ -37,11 +39,11 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/textView"
-                app:layout_constraintTop_toBottomOf="@+id/textView" />
+                app:layout_constraintStart_toStartOf="@+id/titre_couleur"
+                app:layout_constraintTop_toBottomOf="@+id/titre_couleur" />
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/image_couleur"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="8dp"
