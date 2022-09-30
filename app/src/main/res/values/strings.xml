@@ -15,16 +15,16 @@
     </string-array>
 
     <string-array name="description">
-        <item>Lorem amet</item>
-        <item>Lorem amet</item>
-        <item>Lorem amet</item>
-        <item>Lorem amet</item>
-        <item>Lorem amet</item>
-        <item>Lorem amet</item>
-        <item>Lorem amet</item>
-        <item>Lorem amet</item>
-        <item>Lorem amet</item>
-        <item>Lorem amet</item>
+        <item>Ceci est bleu</item>
+        <item>Ceci est rouge</item>
+        <item>Ceci est Vert</item>
+        <item>Ceci est Jaune</item>
+        <item>Ceci est Orange</item>
+        <item>Ceci est Violet</item>
+        <item>Ceci est Marron</item>
+        <item>Ceci est Gris</item>
+        <item>Ceci est Rose</item>
+        <item>Ceci est Cyan</item>
     </string-array>
 
 </resources>

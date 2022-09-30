@@ -1,6 +1,8 @@
 package com.example.recyclerview;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,12 +29,14 @@ public class CouleurAdapter extends RecyclerView.Adapter<CouleurAdapter.Couleurs
     public static class CouleursViewHolder extends RecyclerView.ViewHolder {
         TextView titre_couleur, description_couleur;
         ImageView image_couleur;
+        View mainLayout;
 
         public CouleursViewHolder(@NonNull View itemView) {
             super(itemView);
             titre_couleur = itemView.findViewById(R.id.titre_couleur);
             description_couleur = itemView.findViewById(R.id.description_couleur);
             image_couleur = itemView.findViewById(R.id.image_couleur);
+            mainLayout = itemView.findViewById(R.id.main_layout);
         }
     }
 
@@ -45,7 +49,18 @@ public class CouleurAdapter extends RecyclerView.Adapter<CouleurAdapter.Couleurs
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CouleurAdapter.CouleursViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull CouleurAdapter.CouleursViewHolder holder, @SuppressLint("RecyclerView") int position) {
+
+        holder.mainLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, Details.class);
+                intent.putExtra("titre_couleur", titre_couleurs[position]);
+                intent.putExtra("description_couleur", description_couleurs[position]);
+                intent.putExtra("image_couleur", images[position]);
+                context.startActivity(intent);
+            }
+        });
         holder.titre_couleur.setText(titre_couleurs[position]);
         holder.description_couleur.setText(description_couleurs[position]);
         holder.image_couleur.setImageResource(images[position]);
