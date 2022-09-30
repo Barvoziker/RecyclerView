@@ -12,6 +12,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+/**
+ * It's a class that extends the RecyclerView.Adapter class and it has three TextViews, one ImageView
+ * and one View
+ */
 public class CouleurAdapter extends RecyclerView.Adapter<CouleurAdapter.CouleursViewHolder> {
 
     String[] titre_couleurs;

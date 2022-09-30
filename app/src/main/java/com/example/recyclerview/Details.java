@@ -7,6 +7,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 public class Details extends AppCompatActivity {
 
     ImageView c_image;
@@ -28,6 +29,9 @@ public class Details extends AppCompatActivity {
 
     }
 
+    /**
+     * It gets the data from the intent and puts it in the variables
+     */
     private void getData(){
         if(getIntent().hasExtra("image_couleur") && getIntent().hasExtra("titre_couleur") && getIntent().hasExtra("description_couleur")){
             titre_couleur = getIntent().getStringExtra("titre_couleur");
@@ -39,6 +43,9 @@ public class Details extends AppCompatActivity {
         }
     }
 
+    /**
+     * It sets the data of the card.
+     */
     private void setData(){
         c_titre.setText(titre_couleur);
         c_description.setText(description_couleur);
